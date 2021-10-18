@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- Navigation Bar --> 
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">
+          <img id="logo" src="https://i.pinimg.com/originals/af/fb/c9/affbc96be98edecba473e0e630069b3b.png" alt="Pet Grooming Studio"
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index_page/index.html#myPage">HOME</a></li>
+          <li><a href="../index_page/index.html#about">About Us</a></li>
+          <li><a href="../index_page/index.html#contact">Contact</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Grooming</a></li>
+              <li><a href="#">View History</a></li>
+              <li><a href="../index_page/index.html#feedbac">Give Feedback</a></li> 
+            </ul>
+          </li>
+          <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section (Login Module) -->
+  <section class="vh-100" id="login">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-black">
+
+          <!-- <div class="px-5 ms-xl-4">
+            <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" ></i>
+            <span class="h1 fw-bold mb-0">Pet Grooming Studio</span>
+          </div> -->
+
+          <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+
+            <form style="width: 23rem;">
+
+              <h2 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; color: #000000;">Log in</h2>
+
+              <div class="form-outline mb-4">
+                <input type="email" id="form2Example17" class="form-control form-control-lg" placeholder="Email"/>
+                <!-- <label class="form-label" for="form2Example17">Email address</label> -->
+              </div><br>
+
+              <div class="form-outline mb-4">
+                <input type="password" id="form2Example27" class="form-control form-control-lg" placeholder="Password" />
+                <!-- <label class="form-label" for="form2Example27">Password</label> -->
+              </div><br>
+
+              <div class="pt-1 mb-4">
+                <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
+
+              </div><br>
+
+              <p class="medium mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
+              <p style="color: #000000">Don't have an account? <a href="../signup_page/signup.html" class="link-info">Register here</a></p>
+
+            </form>
+
+          </div>
+
+        </div>
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="http://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/01/03165939/Dogs.jpg" style="object-fit: cover; object-position: left;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+</body>
+</nav>
+</html>

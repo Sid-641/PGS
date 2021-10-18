@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pet Grooming Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+        <img id="logo" src="https://i.pinimg.com/originals/af/fb/c9/affbc96be98edecba473e0e630069b3b.png" alt="Pet Grooming Studio"
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Grooming</a></li>
+            <li><a href="#">View History</a></li>
+            <li><a href="#feedback">Give Feedback</a></li> 
+          </ul>
+        </li>
+        <<!-- li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+        <li><a href="../login_page/login.html"><span class="glyphicon glyphicon-log-in"></span> Login/Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://images.indianexpress.com/2021/01/Golden-Retriever-dog.jpg" alt="Golden Retriever" width="1200" height="700"><br>
+        <div class="carousel-caption">
+          <h3>Every pet deserves a home</h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://cdn.britannica.com/37/91837-050-2CC301F9/Children-pet-dog.jpg" alt="Pets" width="1200" height="700"><br>
+        <div class="carousel-caption">
+          <h3>Life is better with pets 🐶</h3>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="https://www.avma.org/sites/default/files/styles/topic_header_image_1440px/public/2019-11/Hero-2880x900-PetOwners.jpg?h=50091892&itok=7qbQV5Hb" alt="Petcare" width="1200" height="700"><br>
+        <div class="carousel-caption">
+          <h3>Your Pet, Our Care</h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<br><br>
+
+<!-- Container (Image Section) -->
+<div id="thumbnail">
+  <div class="row">
+      <div class="col-sm-4">
+        <a href="#dyk1" data-toggle="collapse">
+          <img src="https://media.istockphoto.com/photos/cute-dog-is-following-a-trail-beagle-hound-picture-id923902232?k=20&m=923902232&s=612x612&w=0&h=xQ908fP7SsYdQFdYr19tNPeg8NgFVLPu3fDmJkX97go=" class="img-circle person" alt="Image" width="255" height="255">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#dyk2" data-toggle="collapse">
+          <img src="https://www.doggroomingcourse.com/wp-content/uploads/2017/11/dog-time-300x176.jpg" class="img-circle person" alt="Image" width="255" height="255">
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#dyk3" data-toggle="collapse">
+          <img src="data:image/jpeg;base64,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" class="img-circle person" alt="Image" width="255" height="255">
+        </a>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Container (Did You Know) -->
+<div class="did_you_know">
+  <div id="dyk1" class="collapse">
+   
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:50%">
+       <h2>Did You Know?</h2>
+      <p class=" w3-large w3-serif">
+      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i> <br>
+      Dogs can sniff at the same time as breathing.<br>
+      Some have such good noses they can sniff out medical problems
+      </p>
+    </div>
+  </div>
+  <div id="dyk2" class="collapse">
+   
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:50%">
+      <h2>Did You Know?</h2>
+      <p class=" w3-large w3-serif">
+      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i> <br>
+      Dogs have a sense of time. It's been proven that they know the difference between an hour and five. If conditioned to, they can predict future events, such as regular walk time.
+      </p>
+    </div>
+  </div>
+  <div id="dyk3" class="collapse">
+   
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:50%">
+      <h2>Did You Know?</h2>
+      <p class=" w3-large w3-serif">
+      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i> <br>
+      The Saluki is the world’s oldest dog breed. They appear in ancient Egyptian tombs dating back to 2100 B.C. 
+      </p>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<!-- Container (About Us) -->
+<div id="about" class="container">
+  <h2>About Us</h2>
+  <p>
+    We are a group of college students with a keen interest in building wesbites. This is our attempt to build a website for this pet grooming service as we have all love pets. Also , we must note that many pets have been neglected during the covid period,hence this service is also to help these pets be well groomed in order to stay healthy!
+  </p>
+  <br>
+</div>
+
+<br><br>
+
+<!-- Container (Feedback Section) -->
+<div class="container" id="feedback">
+  <div class="feedback">
+    <h2>Rate Us!</h2>
+    <div class="rating">
+      <input type="radio" name="rating" id="rating-5">
+      <label for="rating-5"></label>
+      <input type="radio" name="rating" id="rating-4">
+      <label for="rating-4"></label>
+      <input type="radio" name="rating" id="rating-3">
+      <label for="rating-3"></label>
+      <input type="radio" name="rating" id="rating-2">
+      <label for="rating-2"></label>
+      <input type="radio" name="rating" id="rating-1">
+      <label for="rating-1"></label>
+      <div class="emoji-wrapper">
+        <div class="emoji">
+          <svg class="rating-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
+          <path d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z" fill="#f4c534"/>
+          <ellipse transform="scale(-1) rotate(31.21 715.433 -595.455)" cx="166.318" cy="199.829" rx="56.146" ry="56.13" fill="#fff"/>
+          <ellipse transform="rotate(-148.804 180.87 175.82)" cx="180.871" cy="175.822" rx="28.048" ry="28.08" fill="#3e4347"/>
+          <ellipse transform="rotate(-113.778 194.434 165.995)" cx="194.433" cy="165.993" rx="8.016" ry="5.296" fill="#5a5f63"/>
+          <ellipse transform="scale(-1) rotate(31.21 715.397 -1237.664)" cx="345.695" cy="199.819" rx="56.146" ry="56.13" fill="#fff"/>
+          <ellipse transform="rotate(-148.804 360.25 175.837)" cx="360.252" cy="175.84" rx="28.048" ry="28.08" fill="#3e4347"/>
+          <ellipse transform="scale(-1) rotate(66.227 254.508 -573.138)" cx="373.794" cy="165.987" rx="8.016" ry="5.296" fill="#5a5f63"/>
+          <path d="M370.56 344.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z" fill="#3e4347"/>
+        </svg>
+          <svg class="rating-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
+          <path d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z" fill="#f4c534"/>
+          <path d="M328.4 428a92.8 92.8 0 0 0-145-.1 6.8 6.8 0 0 1-12-5.8 86.6 86.6 0 0 1 84.5-69 86.6 86.6 0 0 1 84.7 69.8c1.3 6.9-7.7 10.6-12.2 5.1z" fill="#3e4347"/>
+          <path d="M269.2 222.3c5.3 62.8 52 113.9 104.8 113.9 52.3 0 90.8-51.1 85.6-113.9-2-25-10.8-47.9-23.7-66.7-4.1-6.1-12.2-8-18.5-4.2a111.8 111.8 0 0 1-60.1 16.2c-22.8 0-42.1-5.6-57.8-14.8-6.8-4-15.4-1.5-18.9 5.4-9 18.2-13.2 40.3-11.4 64.1z" fill="#f4c534"/>
+          <path d="M357 189.5c25.8 0 47-7.1 63.7-18.7 10 14.6 17 32.1 18.7 51.6 4 49.6-26.1 89.7-67.5 89.7-41.6 0-78.4-40.1-82.5-89.7A95 95 0 0 1 298 174c16 9.7 35.6 15.5 59 15.5z" fill="#fff"/>
+          <path d="M396.2 246.1a38.5 38.5 0 0 1-38.7 38.6 38.5 38.5 0 0 1-38.6-38.6 38.6 38.6 0 1 1 77.3 0z" fill="#3e4347"/>
+          <path d="M380.4 241.1c-3.2 3.2-9.9 1.7-14.9-3.2-4.8-4.8-6.2-11.5-3-14.7 3.3-3.4 10-2 14.9 2.9 4.9 5 6.4 11.7 3 15z" fill="#fff"/>
+          <path d="M242.8 222.3c-5.3 62.8-52 113.9-104.8 113.9-52.3 0-90.8-51.1-85.6-113.9 2-25 10.8-47.9 23.7-66.7 4.1-6.1 12.2-8 18.5-4.2 16.2 10.1 36.2 16.2 60.1 16.2 22.8 0 42.1-5.6 57.8-14.8 6.8-4 15.4-1.5 18.9 5.4 9 18.2 13.2 40.3 11.4 64.1z" fill="#f4c534"/>
+          <path d="M155 189.5c-25.8 0-47-7.1-63.7-18.7-10 14.6-17 32.1-18.7 51.6-4 49.6 26.1 89.7 67.5 89.7 41.6 0 78.4-40.1 82.5-89.7A95 95 0 0 0 214 174c-16 9.7-35.6 15.5-59 15.5z" fill="#fff"/>
+          <path d="M115.8 246.1a38.5 38.5 0 0 0 38.7 38.6 38.5 38.5 0 0 0 38.6-38.6 38.6 38.6 0 1 0-77.3 0z" fill="#3e4347"/>
+          <path d="M131.6 241.1c3.2 3.2 9.9 1.7 14.9-3.2 4.8-4.8 6.2-11.5 3-14.7-3.3-3.4-10-2-14.9 2.9-4.9 5-6.4 11.7-3 15z" fill="#fff"/>
+        </svg>
+          <svg class="rating-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
+          <path d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z" fill="#f4c534"/>
+          <path d="M336.6 403.2c-6.5 8-16 10-25.5 5.2a117.6 117.6 0 0 0-110.2 0c-9.4 4.9-19 3.3-25.6-4.6-6.5-7.7-4.7-21.1 8.4-28 45.1-24 99.5-24 144.6 0 13 7 14.8 19.7 8.3 27.4z" fill="#3e4347"/>
+          <path d="M276.6 244.3a79.3 79.3 0 1 1 158.8 0 79.5 79.5 0 1 1-158.8 0z" fill="#fff"/>
+          <circle cx="340" cy="260.4" r="36.2" fill="#3e4347"/>
+          <g fill="#fff">
+            <ellipse transform="rotate(-135 326.4 246.6)" cx="326.4" cy="246.6" rx="6.5" ry="10"/>
+            <path d="M231.9 244.3a79.3 79.3 0 1 0-158.8 0 79.5 79.5 0 1 0 158.8 0z"/>
+          </g>
+          <circle cx="168.5" cy="260.4" r="36.2" fill="#3e4347"/>
+          <ellipse transform="rotate(-135 182.1 246.7)" cx="182.1" cy="246.7" rx="10" ry="6.5" fill="#fff"/>
+        </svg>
+          <svg class="rating-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
+    <path d="M407.7 352.8a163.9 163.9 0 0 1-303.5 0c-2.3-5.5 1.5-12 7.5-13.2a780.8 780.8 0 0 1 288.4 0c6 1.2 9.9 7.7 7.6 13.2z" fill="#3e4347"/>
+    <path d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z" fill="#f4c534"/>
+    <g fill="#fff">
+      <path d="M115.3 339c18.2 29.6 75.1 32.8 143.1 32.8 67.1 0 124.2-3.2 143.2-31.6l-1.5-.6a780.6 780.6 0 0 0-284.8-.6z"/>
+      <ellipse cx="356.4" cy="205.3" rx="81.1" ry="81"/>
+    </g>
+    <ellipse cx="356.4" cy="205.3" rx="44.2" ry="44.2" fill="#3e4347"/>
+    <g fill="#fff">
+      <ellipse transform="scale(-1) rotate(45 454 -906)" cx="375.3" cy="188.1" rx="12" ry="8.1"/>
+      <ellipse cx="155.6" cy="205.3" rx="81.1" ry="81"/>
+    </g>
+    <ellipse cx="155.6" cy="205.3" rx="44.2" ry="44.2" fill="#3e4347"/>
+    <ellipse transform="scale(-1) rotate(45 454 -421.3)" cx="174.5" cy="188" rx="12" ry="8.1" fill="#fff"/>
+  </svg>
+          <svg class="rating-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
+          <path d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z" fill="#f4c534"/>
+          <path d="M232.3 201.3c0 49.2-74.3 94.2-74.3 94.2s-74.4-45-74.4-94.2a38 38 0 0 1 74.4-11.1 38 38 0 0 1 74.3 11.1z" fill="#e24b4b"/>
+          <path d="M96.1 173.3a37.7 37.7 0 0 0-12.4 28c0 49.2 74.3 94.2 74.3 94.2C80.2 229.8 95.6 175.2 96 173.3z" fill="#d03f3f"/>
+          <path d="M215.2 200c-3.6 3-9.8 1-13.8-4.1-4.2-5.2-4.6-11.5-1.2-14.1 3.6-2.8 9.7-.7 13.9 4.4 4 5.2 4.6 11.4 1.1 13.8z" fill="#fff"/>
+          <path d="M428.4 201.3c0 49.2-74.4 94.2-74.4 94.2s-74.3-45-74.3-94.2a38 38 0 0 1 74.4-11.1 38 38 0 0 1 74.3 11.1z" fill="#e24b4b"/>
+          <path d="M292.2 173.3a37.7 37.7 0 0 0-12.4 28c0 49.2 74.3 94.2 74.3 94.2-77.8-65.7-62.4-120.3-61.9-122.2z" fill="#d03f3f"/>
+          <path d="M411.3 200c-3.6 3-9.8 1-13.8-4.1-4.2-5.2-4.6-11.5-1.2-14.1 3.6-2.8 9.7-.7 13.9 4.4 4 5.2 4.6 11.4 1.1 13.8z" fill="#fff"/>
+          <path d="M381.7 374.1c-30.2 35.9-75.3 64.4-125.7 64.4s-95.4-28.5-125.8-64.2a17.6 17.6 0 0 1 16.5-28.7 627.7 627.7 0 0 0 218.7-.1c16.2-2.7 27 16.1 16.3 28.6z" fill="#3e4347"/>
+          <path d="M256 438.5c25.7 0 50-7.5 71.7-19.5-9-33.7-40.7-43.3-62.6-31.7-29.7 15.8-62.8-4.7-75.6 34.3 20.3 10.4 42.8 17 66.5 17z" fill="#e24b4b"/>
+        </svg>
+          <svg class="rating-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <g fill="#ffd93b">
+            <circle cx="256" cy="256" r="256"/>
+            <path d="M512 256A256 256 0 0 1 56.8 416.7a256 256 0 0 0 360-360c58 47 95.2 118.8 95.2 199.3z"/>
+          </g>
+          <path d="M512 99.4v165.1c0 11-8.9 19.9-19.7 19.9h-187c-13 0-23.5-10.5-23.5-23.5v-21.3c0-12.9-8.9-24.8-21.6-26.7-16.2-2.5-30 10-30 25.5V261c0 13-10.5 23.5-23.5 23.5h-187A19.7 19.7 0 0 1 0 264.7V99.4c0-10.9 8.8-19.7 19.7-19.7h472.6c10.8 0 19.7 8.7 19.7 19.7z" fill="#e9eff4"/>
+          <path d="M204.6 138v88.2a23 23 0 0 1-23 23H58.2a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z" fill="#45cbea"/>
+          <path d="M476.9 138v88.2a23 23 0 0 1-23 23H330.3a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z" fill="#e84d88"/>
+          <g fill="#38c0dc">
+            <path d="M95.2 114.9l-60 60v15.2l75.2-75.2zM123.3 114.9L35.1 203v23.2c0 1.8.3 3.7.7 5.4l116.8-116.7h-29.3z"/>
+          </g>
+          <g fill="#d23f77">
+            <path d="M373.3 114.9l-66 66V196l81.3-81.2zM401.5 114.9l-94.1 94v17.3c0 3.5.8 6.8 2.2 9.8l121.1-121.1h-29.2z"/>
+          </g>
+          <path d="M329.5 395.2c0 44.7-33 81-73.4 81-40.7 0-73.5-36.3-73.5-81s32.8-81 73.5-81c40.5 0 73.4 36.3 73.4 81z" fill="#3e4347"/>
+          <path d="M256 476.2a70 70 0 0 0 53.3-25.5 34.6 34.6 0 0 0-58-25 34.4 34.4 0 0 0-47.8 26 69.9 69.9 0 0 0 52.6 24.5z" fill="#e24b4b"/>
+          <path d="M290.3 434.8c-1 3.4-5.8 5.2-11 3.9s-8.4-5.1-7.4-8.7c.8-3.3 5.7-5 10.7-3.8 5.1 1.4 8.5 5.3 7.7 8.6z" fill="#fff" opacity=".2"/>
+        </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+     <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment Here" rows="5"></textarea>       
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12" form-group>
+            <button class="btn pull-right" type="submit">Submit</button>            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<<!-- div class="container">
+  <span id="rateMe4"  class="feedback"></span>
+  <script src="js/addons/rating.js">
+  $(document).ready(function() 
+  {
+    $('#rateMe4').mdbRate();
+  });
+</script>
+</div> -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Container (Contact Section) -->
+<footer>
+  <div id="contact" class="container">
+    <h2 class="text-center">Contact</h2>
+    <p class="="text-center><em>Need help? Contact us...</em></p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <p>We are always ready to help! </p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>Chennai, India</p>
+        <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 1234567890</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email:<a href="mailto:petgroomingstudio@gmail.com" > petgroomingstudio@gmail.com</a></p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
